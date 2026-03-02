@@ -3,14 +3,16 @@ kind: workflow
 name: prod
 on:
   workflow_dispatch:
-
+  push:
+    branches:
+      - main
 jobs:
   deploy:
     steps:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: aspm-test
-          artifact-id: 488e5dc3-397c-4d8c-b772-602ba24347e3
+          artifact-id: 37c23744-36e6-48ba-a77c-f7b44ee574bb
           target-environment: Pre-prod
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
