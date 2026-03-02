@@ -10,10 +10,10 @@ jobs:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: aspm-test
-          artifact-id: 884cc7f5-088a-4434-838a-6af0d3ee70fe
+          artifact-id: 11ca354b-97ba-4af3-a173-cedace4e4250
           target-environment: Pre-prod
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: aspm-test
-          artifact-id: fc370d65-af1a-4888-9931-c4c7eaa08daa
-          target-environment: prod
+          artifact-id: 11ca354b-97ba-4af3-a173-cedace4e4250
+          target-environment: qa
